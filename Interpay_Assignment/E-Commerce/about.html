@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>About — MyShop</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container navbar">
+      <a href="index.html" class="logo"><span class="brand-icon">MS</span> MyShop</a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html" class="active">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="cart.html" class="cart-btn"><span class="icon">🛒</span> <span class="cart-count">0</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <h2>About MyShop</h2>
+      <div style="display:grid;grid-template-columns:1fr 380px;gap:18px;align-items:start">
+        <div>
+          <p class="small" style="color:var(--muted)">MyShop is a curated marketplace that sources quality products for everyday life. We focus on design, durability and value.</p>
+          <h3>Our mission</h3>
+          <p>To make beautiful, well-made goods easy to discover and buy. We work with small brands and artisans to bring you items you’ll love using every day.</p>
+          <h3>Contact & store</h3>
+          <p class="small">If you'd like to work with us or have questions, reach out via the contact page.</p>
+        </div>
+        <aside style="background:var(--card);padding:16px;border-radius:12px;box-shadow:var(--shadow)">
+          <h4>Subscribe to updates</h4>
+          <p class="small" style="color:var(--muted)">Get new product drops and sale alerts.</p>
+          <input placeholder="your email" style="width:100%;padding:10px;border-radius:8px;border:1px solid var(--glass-2)">
+          <div style="margin-top:10px"><button class="btn btn-primary">Subscribe</button></div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div><h4>Contact</h4><strong>MyShop</strong></div>
+      <div><h4>About</h4><a href="about.html">About Us</a></div>
+      <div><h4>My Account</h4><a href="#">Sign In</a></div>
+      <div><h4>Install App</h4></div>
+    </div>
+    <div style="text-align:center;padding:18px 0;color:#9fb3cf;font-size:13px">© <span id="year6"></span> MyShop</div>
+  </footer>
+<script>document.getElementById('year6').textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Cart — MyShop</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container navbar">
+      <a href="index.html" class="logo"><span class="brand-icon">MS</span> MyShop</a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="cart.html" class="cart-btn"><span class="icon">🛒</span> <span class="cart-count">0</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2 style="margin-top:22px">Your Cart</h2>
+    <div class="cart-wrap" style="margin-top:12px"></div>
+  </main>
+
+  <footer class="footer"><div class="footer-grid">
+    <div><h4>Contact</h4><strong>MyShop</strong></div>
+    <div><h4>About</h4><a href="about.html">About Us</a></div>
+    <div><h4>My Account</h4><a href="#">Sign In</a></div>
+    <div><h4>Install App</h4></div>
+  </div>
+  <div style="text-align:center;padding:18px 0;color:#9fb3cf;font-size:13px">© <span id="year4"></span> MyShop</div>
+  </footer>
+<script>document.getElementById('year4').textContent = new Date().getFullYear();</script>
+</body>
+</html>
