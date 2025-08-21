@@ -1,10 +1,9 @@
 
-//  <link rel="stylesheet" href="style.css"></link> 
 const inputBox = document.getElementById("text");
 const list = document.getElementById("list");
 
 function AddTask(){
-    if (inputBox.value === '' ){
+    if (inputBox.trim() === '' ){
         alert("you must write something");
     }
     else{
@@ -16,14 +15,32 @@ function AddTask(){
         span.innerHTML= "\u00d7";
         li.appendChild(span);
     }
-    inputBox.value = " ";
+    inputBox.value = "";
+    saveData();
 }
 
 list.addEventListener("click", function(e){
     if (e.target.tagname === "LI"){
         e.target.classList.toggle("checked");
+        saveData();
     }
     else if(e.target.tagname === "SPAN"){
         e.target.parentElement.remove();
+        saveData();
     }
 }, false);
+
+function saveData(){
+    localStorage.setItem("data", list.innerHTML);
+}
+
+function showTask(){
+    list.innerHTML = localStorage.getItem("data");
+}
+showTask();
+
+inputBox.addEventListener("keypress", function(e){
+    if (e.key === "Enter") {
+        AddTask();
+    }
+});

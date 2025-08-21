@@ -5,12 +5,13 @@
     height: auto;
     width: 400px;
     margin: auto;
-    padding: 10px 50px;
-    
     background-color: rgb(220, 214, 214);
     border: 1px solid rgb(42, 40, 40);
     border-radius: 10px;
     box-shadow: 1px 0px 2px 1px rgb(160, 160, 160);
+}
+h2{
+    text-align: center;
 }
 .container2{
     display: flex;
@@ -21,7 +22,7 @@
     border: 1px solid gray;
     border-radius: 15px;
     padding: 8px;
-   
+    margin-left: 30px;   
 }
 .Add-button{
     font-size: 20px;
@@ -32,7 +33,7 @@
     cursor: pointer;
     background-color: rgb(16, 246, 166);
 }
-ui li{
+ul li{
     list-style: none;
     font-size: 17px ;
     padding: 12px 8px 12px 50px;
@@ -40,7 +41,7 @@ ui li{
     cursor: pointer;
     position: relative;
 }
-ui li::before{
+ul li::before{
     content: '';
     position: absolute;
     height: 24px;
@@ -53,13 +54,13 @@ ui li::before{
     left: 8px;
     
 }
-ui li.checked{
+ul li.checked{
     text-decoration: line-through;
     color: gray;
     cursor: pointer;
 
 }
-ui li.checked::before{
+ul li.checked::before{
     background-image: url(https://th.bing.com/th/id/OIP.wMAsH15GymZQv79F1hgKdwHaFz?w=245&h=192&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3);
 }
 ul li span{
@@ -76,4 +77,5 @@ ul li span{
 
 ul li span:hover{
     background: #edeef0;
+    border-radius: 50%;
 }
