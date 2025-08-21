@@ -1,15 +1,79 @@
 .container1{
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     height: auto;
     width: 400px;
-
-    margin: 100px;
-    padding: 20px;
-    background-color: rgb(236, 219, 219);
+    margin: auto;
+    padding: 10px 50px;
+    
+    background-color: rgb(220, 214, 214);
     border: 1px solid rgb(42, 40, 40);
     border-radius: 10px;
     box-shadow: 1px 0px 2px 1px rgb(160, 160, 160);
+}
+.container2{
+    display: flex;
+    font-size: 20px;    
+}
+.Input-button{
+    font-size: 20px;
+    border: 1px solid gray;
+    border-radius: 15px;
+    padding: 8px;
+   
+}
+.Add-button{
+    font-size: 20px;
+    border: 1px solid gray;
+    border-radius: 15px;
+    padding: 8px 15px;
+    margin-left: 10px;
+    cursor: pointer;
+    background-color: rgb(16, 246, 166);
+}
+ui li{
+    list-style: none;
+    font-size: 17px ;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+ui li::before{
+    content: '';
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    background-image: url(https://cdn3.iconfinder.com/data/icons/arrows-160/96/uncheckedV_circle-512.png);
+    background-size: cover;
+    background-position: center;
+    top: 10px;
+    left: 8px;
+    
+}
+ui li.checked{
+    text-decoration: line-through;
+    color: gray;
+    cursor: pointer;
+
+}
+ui li.checked::before{
+    background-image: url(https://th.bing.com/th/id/OIP.wMAsH15GymZQv79F1hgKdwHaFz?w=245&h=192&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3);
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+}
+
+ul li span:hover{
+    background: #edeef0;
 }

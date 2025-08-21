@@ -4,15 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">  
 </head>
 <body>
     <div class="container1">
     <h2>To Do App</h2>
-    <div>
-        <input type="text" placeholder="Enter your task" class="Input-button">
-        <button class="Add-button">Add</button>
+    <div class="container2">
+        <input type="text" placeholder="Enter task" class="Input-button" id="text">
+        <button class="Add-button" onclick="AddTask()">Add</button>
     </div>
+        <ul id="list">   
+            <!-- <li class="checked"> Task 1</li> -->
+        </ul>
+
     </div>
+     <script src="script.js"></script>
+
+
 </body>
 </html>
