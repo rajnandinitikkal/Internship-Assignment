@@ -3,7 +3,7 @@ const inputBox = document.getElementById("text");
 const list = document.getElementById("list");
 
 function AddTask(){
-    if (inputBox.trim() === '' ){
+    if (inputBox.value === '' ){
         alert("you must write something");
     }
     else{
